@@ -1,20 +1,25 @@
 body {
+  text-align: center;
   padding: 0;
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 150%;
   color: #333;
-  background: #efeee7;
+  background: #e7d338;
 }
 
-header {
-  background: #333;
+
+main {
+    max-width: 35%;
+    max-height: 65%;
+    margin-left: 25%;
 }
 
-.container {
-    max-width: auto;
-    margin-left: 33%;
+aside {
+  max-width: 50%;
+  max-height: 65%;
+  margin-right: 20%
 }
 
 /*Playing around with image properties*/
@@ -24,23 +29,16 @@ img {
   }
 
 h1 {
-  padding: 20px 0;
+  padding: 20px;
   margin: 0;
   margin-bottom: 20px;
   font-size: 34px;
 }
 
 h2 {
-  font-size: 24px;
-}
-
-a {
-  color: #d21034;
-}
-
-.container {
-  width: 1024px;
-  margin: 0 auto;
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 #main-bio,
@@ -50,7 +48,7 @@ a {
 }
 
 #main-bio {
-  width: 70%;
+  width: 100%
 }
 
 #contact-info {
