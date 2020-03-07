@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS taken from the Getting Started page-->
+    <title>Josh Benjamin Portfolio</title>
+
+    <!--Not at all sure if I need a style.css file here, given the Bootstrap link, but I think I've seen both done here before-->
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<!--Playing around with the NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-1 h1">Navbar</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.elp.upenn.edu/faculty/joshua-benjamin">Professor Profile at
+                    UPenn</a>
+            </li>
+
+            <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Social Media Contacts
+                </a>
+                <!--created a dropdown menu, added social media contacts-->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/joshua-benjamin-046a7196/">LinkedIn</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/joshua7david/">Instagram</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/joshua.benjamin.311">Facebook</a>
+                    <a class="dropdown-item" href="https://twitter.com/JoshuaDBenjamin">Twitter</a>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+
+    <section class="mb-4">
+    
+        <!--Section heading-->
+        <h2 style="text-align: center; margin-left: 100px; margin-right: 100px; color:lime; background-color: maroon;">This is Josh! Feel free to drop a line!</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Any questions? Concerns? Good Dad Jokes or Memes to share? Don't hesitate to contact me
+            directly. I'll get back to you post-haste!</p>
+    
+        <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-8 mb-md-0 mb-3">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    
+                    <!--a sub-row...I think-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-5" style="margin-left: 25px;">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-md-5">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-9" style="margin-left: 50px;">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-12" style="margin-left: 25px;">
+    
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="5"
+                                    class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                </form>
+    
+                <div class="text-center text-md-left" style="margin-left: 25px;">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Lancaster, PA</p>
+                    </li>
+    
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p><strong>1717.538.0866</strong></p>
+                    </li>
+    
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>jbenj@sas.upenn.edu
+                            <br><br>
+                            jdb354@drexel.edu
+                            <br><br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+    
+        </div>
+    
+    </section>
+
+</body>
